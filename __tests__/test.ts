@@ -12,7 +12,6 @@ it("from should resolve lazily", async () => {
   expect(called).toBe(true);
 });
 
-
 it("then", async () => {
   let state = false;
   const p = new LazyPromise<number>(resolve => {
@@ -33,5 +32,6 @@ it("catch", async () => {
   expect(state).toBe(false);
   try {
     await p;
-  } catch (err) { }
+  } catch (err) {}
   expect(state).toBe(true);
+});

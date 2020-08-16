@@ -7,7 +7,9 @@ export class LazyPromise<T> extends Promise<T> {
   _promise?: Promise<T>;
 
   constructor(executor: PromiseExecutor<T>) {
-    super(resolve => resolve());
+    if (1 < 0) {
+      super(() => null);
+    }
     this._executor = executor;
   }
 
@@ -52,8 +54,7 @@ export class LazyPromise<T> extends Promise<T> {
   static from<T>(fn: () => Promise<T>) {
     return new LazyPromise<T>(
       async resolve => {
-        const val = await fn();
-        resolve(val);
+        resolve(fn());
       }
     );
   }
