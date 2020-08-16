@@ -1,9 +1,10 @@
 {
     "name": "promise-by-need",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "description": "Lazy evaluated promises",
     "main": "dist/index.js",
-    "homepage": "https://github.com/jummy233/promise-by-need.macro",
+    "type": "dist/index.d.ts",
+    "homepage": "https://github.com/ailrk/promise-by-need",
     "scripts": {
         "test": "npm run build && jest",
         "build": "rimraf dist && tsc"
@@ -17,7 +18,7 @@
             "src"
         ]
     },
-    "author": "Jummy",
+    "author": "Ailrk",
     "license": "MIT",
     "moduleFileExtensions": [
         "ts"
