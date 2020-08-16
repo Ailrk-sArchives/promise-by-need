@@ -42,7 +42,7 @@ export class LazyPromise<T> extends Promise<T> {
 
   static resolve<T>(): Promise<void>;
   static resolve<T>(value: T | PromiseLike<T>): LazyPromise<T>;
-  static resolve<T>(value?: T | PromiseLike<T>): LazyPromise<T> | Promise<void>{
+  static resolve<T>(value?: T | PromiseLike<T>): LazyPromise<T> | Promise<void> {
     if (value === undefined) {
       return Promise.resolve();
     }
