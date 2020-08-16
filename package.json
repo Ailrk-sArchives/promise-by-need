@@ -2,7 +2,7 @@
     "name": "promise-by-need",
     "version": "0.0.3",
     "description": "Lazy evaluated promises",
-    "main": "src/index.ts",
+    "main": "dist/index.js",
     "homepage": "https://github.com/jummy233/promise-by-need.macro",
     "scripts": {
         "test": "npm run build && jest",
