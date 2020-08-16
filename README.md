@@ -15,4 +15,4 @@ await p;
 // `now state is true`
 ```
 
-There are many lazily evaluated promise library on github, and there implementatin are all sorta the same. This version combined some features between different libraries I find useful.
+There are many lazily evaluated promise libraries on github, and there implementation are all very similar. This library is just one of them but combined some features I feel useful together.
