@@ -9,8 +9,7 @@ export class LazyPromise<T> extends Promise<T> {
   constructor(executor: PromiseExecutor<T>) {
     try {
       super(resolve => resolve());
-    } catch (_) {
-    }
+    } catch (_) {}
     Object.setPrototypeOf(this, LazyPromise.prototype);
     this._executor = executor;
   }

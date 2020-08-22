@@ -1,6 +1,6 @@
 {
     "name": "promise-by-need",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Lazy evaluated promises",
     "main": "dist/index.js",
     "type": "dist/index.d.ts",
